@@ -233,13 +233,18 @@ export default function Contact() {
                                                             name="phone"
                                                             country={"sa"}
                                                             value={formData.phone}
-                                                            onChange={handlePhoneChange}
+  onChange={(value) =>
+    setFormData({
+      ...formData,
+      phone: value,
+    })
+  }
                                                             countryCodeEditable={false}
                                                             required
                                                             inputStyle={{
                                                                 width: "100%",
                                                                 borderRadius: "0",
-                                                                border: phoneError ? "1px solid red" : "1px solid #000",
+                                                                border: phoneError ? "1px solid red" : "1px solid #000", // Visual error feedback
                                                                 height: "60px",
                                                             }}
                                                         />
