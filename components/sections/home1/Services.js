@@ -1,6 +1,5 @@
 'use client'
 import Link from "next/link"
-import { useState } from "react"
 import { FaPlane, FaGlobe, FaMedkit, FaSchool, FaBuilding, FaShoppingCart, FaBroadcastTower, FaLandmark, FaDollarSign, FaHouseUser, FaMoneyBill, FaWalking, FaMap, FaShieldAlt, FaChartLine, FaIdCard, FaLightbulb, FaGift, FaKey, FaUsers, FaBriefcase, FaPassport, FaCity, FaStar } from "react-icons/fa";
 
 export default function Pricing() {
@@ -9,9 +8,11 @@ export default function Pricing() {
         <>
             {/*Start Service One */}
         <section className="service-one" id="why-invest-in-dubai" dir="rtl">
+            {/* <div className="service-one__shape2" style={{backgroundImage: 'url(assets/img/shape/service-v1-shape2.png)'}}>
+            </div> */}
             <div className="container">
                 <div className="sec-title">
-                    <h2>لماذا تستثمر في دبي؟</h2>
+                    <h2>لماذا الاستثمار في دبي؟</h2>
                 </div>
                 <div className="row">
                     {/*Start Service One Single */}
@@ -24,12 +25,13 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>عوائد إيجارية مرتفعة</h2>
-                                    <p>عائد سنوي يتراوح بين 5% إلى 9%.</p>
+                                    <h2 style={{color: "#ffffff"}}>عوائد إيجارية عالية</h2>
+                                    <p>نسبة ربح تصل إلى 5–9% سنويا.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.2s">
@@ -41,12 +43,13 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>عقارات فاخرة بأسعار منافسة</h2>
-                                    <p>رفاهية بتكلفة أقل.</p>
+                                    <h2 style={{color: "#ffffff"}}>عقارات فاخرة بتكلفة أقل</h2>
+                                    <p>فخامة بأسعار تنافسية.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.1s">
@@ -58,12 +61,13 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>ملكية خالية من الضرائب</h2>
-                                    <p>لا توجد ضرائب على العقارات مطلقاً.</p>
+                                    <h2 style={{color: "#ffffff"}}>ملكية معفاة من الضرائب</h2>
+                                    <p> لا توجد أي ضرائب على العقار.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.2s">
@@ -75,12 +79,13 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>سهولة الوصول العالمية</h2>
-                                    <p>رحلات مباشرة إلى أهم مدن العالم.</p>
+                                    <h2 style={{color: "#ffffff"}}>سهولة الوصول عالمياً</h2>
+                                    <p>وصول مباشر إلى أبرز المدن العالمية.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.2s">
@@ -93,11 +98,12 @@ export default function Pricing() {
                                 </div>
                                 <div className="content-box">
                                     <h2 style={{color: "#ffffff"}}>السياحة وأسلوب الحياة</h2>
-                                    <p>شواطئ، مراكز تسوق، معالم سياحية وفنادق عالمية.</p>
+                                    <p>الشواطئ، المولات، المعالم السياحية والفنادق.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.2s">
@@ -109,12 +115,13 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>آمنة ومثالية للعائلات</h2>
-                                    <p>من أكثر المدن أمانًا في العالم.</p>
+                                    <h2 style={{color: "#ffffff"}}>آمنة ومناسبة للعائلات</h2>
+                                    <p>إحدى أكثر المدن أماناً في العالم.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.2s">
@@ -126,12 +133,13 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>مركز عالمي للأعمال والتجارة</h2>
-                                    <p>وجهة مفضلة للمستثمرين الدوليين.</p>
+                                    <h2 style={{color: "#ffffff"}}>مركز للأعمال والتجارة</h2>
+                                    <p>جاذب للمستثمرين العالميين.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.2s">
@@ -143,12 +151,13 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>تأشيرة الإقامة الذهبية في الإمارات</h2>
+                                    <h2 style={{color: "#ffffff"}}>الإقامة الذهبية</h2>
                                     <p>تأشيرات ذهبية وخضراء للمستثمرين.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.2s">
@@ -161,11 +170,12 @@ export default function Pricing() {
                                 </div>
                                 <div className="content-box">
                                     <h2 style={{color: "#ffffff"}}>مدينة جاهزة للمستقبل</h2>
-                                    <p>تركز على التكنولوجيا والطاقة الخضراء والصحة والتعليم.</p>
+                                    <p>التركيز على الابتكار في التكنولوجيا، الطاقة المستدامة، الرعاية الصحية والتعليم.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
 
                     {/*Start Service One Single */}
                     <div className="col-xl-6 col-lg-6 wow animated fadeInUp" data-wow-delay="0.2s">
@@ -177,20 +187,20 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>مكافآت إعمار الحصرية</h2>
-                                    <p>امتيازات بلاتينية وذهبية للمستثمرين المميزين.</p>
+                                    <h2 style={{color: "#ffffff"}}>مكافآت حصرية من إعمار</h2>
+                                    <p>مزايا بلاتينية وذهبية للمستثمرين المميزين.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {/*End Service One Single */}
                 </div>
-
                 <div className="about-one__content-bottom" style={{display: "flex", justifyContent: "center"}}>
                     <div className="about-one__content-bottom-author-box">
                         <div className="btn-box">
                             <div className="btn-one">
                                 <Link className="thm-btn" href="#contact-form">
-                                    <span className="txt">تسجيل الاهتمام</span>
+                                    <span className="txt">سجل اهتمامك</span>
                                 </Link>
                             </div>
                         </div>
@@ -198,6 +208,7 @@ export default function Pricing() {
                 </div>
             </div>
         </section>
+        {/*End Service One */}
         </>
     )
 }

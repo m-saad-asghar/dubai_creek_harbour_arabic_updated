@@ -94,16 +94,16 @@ export default function ThankYou() {
         </div>
       </div>
     </div>
-  <Script id="lead-submission-saudi-ar" strategy="afterInteractive">
-{`
-  window.gtag('event', 'lead_submission_saudi_ar', {
-    lead_language: 'arabic',
-    project_name: 'dubai_hills_estate',
-    landing_page: 'saudi_ar',
-    currency: 'AED',
-    value: 310
-  });
-`}
+  <Script id="lead-submission-dhe-ar" strategy="afterInteractive">
+  {`
+    window.gtag('event', 'lead_dhe_ar', {
+      lead_language: 'arabic',
+      project_name: 'dubai_hills_estate',
+      landing_page: 'dhe_ar',
+      currency: 'AED',
+      value: 5
+    });
+  `}
 </Script>
     </>
   );

@@ -32,7 +32,9 @@ export default function Banner() {
     <section className="main-slider main-slider-one" id="home" dir='rtl'>
       <Swiper {...swiperOptions} className="banner-carousel owl-theme owl-carousel owl-nav-none owl-dots-none">                    
         <SwiperSlide className="swiper-slide" style={{height: "100vh"}}>
-          <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider/emaar_img_2.jpg)'}}>
+          <div className="image-layer" 
+          style={{ backgroundImage: 'url(https://cdn.properties.emaar.com/wp-content/uploads/2020/04/DHE_COMMUNITY_HERO-resize-1620x832.jpeg)' }}
+          >
             </div>
             {/* <div className="shape1"><img src="url(assets/img/slider/emaar_img_2.jpg)" alt=""/></div> */}
             <div className="container main_wrapper">
@@ -40,17 +42,16 @@ export default function Banner() {
                     <div className="main-slider-one__content">
                         <div className='banner_text_container'>
          <div>
-             <p className='small_heading' style={{lineHeight: "1.2"}}>دبي هيلز إستيت</p>
+             <p className='small_heading' style={{lineHeight: "1.2"}}>دبي هيلز استيت</p>
           <h3 style={{lineHeight: "1.2"}} className='main_heading_margin'>
-  منازل فاخرة تبدأ من <span className="line-break">AED1.6M.*</span>
+  امتلك منزلاً فاخراً ابتداءً من<span className="line-break">1.6مليون درهم إماراتي*</span>
 </h3>
          </div>
 
         <p className="down_styling" style={{lineHeight: "1.5"}}>احصل على عوائد استثنائية على استثمارك العقاري في أكثر مواقع دبي طلبًا.</p>
   <div className='resp_usd'>
-        <p className="down_styling" style={{lineHeight: "1.5"}}>
-  *دولار أمريكي 436,000 / يورو 375,000 / جنيه إسترليني 324 ألف
-   / <span className="line-break-other">GBP 324K</span>
+       <p className="down_styling" style={{lineHeight: "1.5"}}>
+*379,000 دولار أمريكي / 436,000 يورو / <span className="line-break-other">332,000 جنيه إسترليني</span>
 </p>
 
       </div>
@@ -60,7 +61,7 @@ export default function Banner() {
                         <div className="btn-box">
                             <div className="btn-one">
                                 <Link className="thm-btn" href="#contact-form">
-                                    <span className="txt">تسجيل الاهتمام</span>
+                                    <span className="txt">سجل اهتمامك</span>
                                 </Link>
                             </div>
                         </div>

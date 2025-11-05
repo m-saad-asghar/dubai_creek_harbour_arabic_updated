@@ -122,7 +122,7 @@ export default function TeamsListing() {
                                        <div className="btn-box">
                             <div className="btn-one">
                                 <Link className="thm-btn" href="#contact-form">
-                                    <span className="txt">سَجِّل اهتمامك</span>
+                                    <span className="txt">سجل اهتمامك</span>
                                 </Link>
                             </div>
                         </div>

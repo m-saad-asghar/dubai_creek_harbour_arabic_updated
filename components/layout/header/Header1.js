@@ -9,7 +9,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
             <header className={`main-header main-header-one container ${scroll ? "" : ""}`} dir="rtl">
                 <div className={`menu-area ${scroll ? "sticky-menu" : ""}`}>
                     {/* header-lower */}
-                    <div className="auto-container">
+                    <div style={{paddingLeft: 0, paddingRight: 0}} className={`menu-area ${scroll ? "spacing_ending" : ""} container`}>
                         <div className="menu-area__inner">
                             <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
                                 {/* <i className="fas fa-bars"></i> */}
@@ -19,25 +19,24 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                                     <div className="main-header-one__inner" style={{width: "100%"}}>
                                         <div className="main-header-one__left" style={{width: "100%"}}>
                                             <div className="logo-box logo_align">
-                                               <Link href="/" passHref>
   <Image
     src="/assets/icon/emaar_logo.png"
     alt="emaar_logo"
     height={40}
     width={300}
     className="emaar_logo"
+    style={{cursor: "pointer"}}
   />
-</Link>
- <Link href="/" passHref>
+
   <Image
     src="/assets/img/shiro_images/logo.png"
     alt="shiro_logo"
     height={40}
     width={300}
     className="shiro_logo"
+     style={{cursor: "pointer"}}
   />
-</Link>
-                                            </div>
+                                    </div>
                                         </div>
 
                                         {/* <div className="main-header-one__middle">

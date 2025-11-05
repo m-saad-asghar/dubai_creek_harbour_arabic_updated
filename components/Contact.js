@@ -63,7 +63,7 @@ export default function Contact() {
             phone: value,
         });
         if (value.length > 0 && !isPossiblePhoneNumber('+' + value)) {
-            setPhoneError('الرجاء إدخال رقم هاتف صحيح (مع رمز الدولة).');
+            setPhoneError('يرجى إدخال رقم هاتف صالح (بما في ذلك رمز الدولة).');
         } else {
             setPhoneError('');
         }
@@ -76,7 +76,7 @@ export default function Contact() {
             setPhoneError("رقم الهاتف مطلوب");
             return;
         } else if (formData.phone.length < 9 || formData.phone.length > 15) {
-            setPhoneError("يجب أن يكون رقم الهاتف بين 9 و 15 رقمًا");
+           setPhoneError("يجب أن يكون رقم الهاتف بين 9 و15 رقمًا");
             return;
         } else {
             setPhoneError("");
@@ -189,8 +189,8 @@ export default function Contact() {
                             <div className="container">
                                 <div className="contact-two__inner">
                                     <div className="title-box">
-                                        <h2 style={{ color: "#ffffff" }}>تواصل معنا</h2>
-                                        <p style={{ color: "#ffffff" }}>الحقول المطلوبة محددة بعلامة *</p>
+                                        <h2 style={{ color: "#ffffff" }} className='contact_heading_styling'>تحدث إلى أحد مستشاري العقارات لدينا</h2>
+                                        <p style={{ color: "#ffffff" }}>الحقول المطلوبة مُشار إليها بـ *</p>
                                     </div>
                                     <div className="contact-two__inner-box">
                                         <form 
@@ -200,7 +200,9 @@ export default function Contact() {
                                             <div className="row">
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                                     <div className="contact-page__input-box">
-                                                        <label className="form_label">الاسم الكامل*</label>
+                                                        <label className="form_label">
+                                                            الاسم الكامل*
+                                                        </label>
                                                         <input type="text" placeholder="أدخل الاسم الكامل" name="name" required
                                                             value={formData.name}
                                                             onChange={handleChange}
@@ -210,7 +212,9 @@ export default function Contact() {
                                                 </div>
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                                     <div className="contact-page__input-box">
-                                                        <label className="form_label">البريد الإلكتروني*</label>
+                                                       <label className="form_label">
+                                                            البريد الإلكتروني*
+                                                        </label>
                                                         <input type="email" placeholder="أدخل بريدك الإلكتروني" name="email" required
                                                             value={formData.email}
                                                             onChange={handleChange}
@@ -222,7 +226,9 @@ export default function Contact() {
                                             <div className="row">
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                                     <div className="contact-page__input-box">
-                                                        <label className="form_label">رقم الهاتف* (مع رمز الدولة)</label>
+                                                        <label className="form_label">
+                                                            رقم الهاتف* (بما في ذلك رمز الدولة)
+                                                        </label>
                                                         <PhoneInput
                                                             name="phone"
                                                             country={"sa"}
@@ -242,7 +248,9 @@ export default function Contact() {
                                                 </div>
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                                     <div className="contact-page__input-box">
-                                                        <label className="form_label">دولة الإقامة*</label>
+                                                         <label className="form_label">
+                                                            دولة الإقامة*
+                                                        </label>
                                                         <input type="text" placeholder="أدخل دولتك" name="country_of_residence" required
                                                             value={formData.country_of_residence}
                                                             onChange={handleChange}
@@ -255,7 +263,9 @@ export default function Contact() {
                                             <div className="row">
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12" style={{ marginBottom: 20 }}>
                                                     <div className="contact-page__input-box dropdown_styling">
-                                                        <label className="form_label">عدد غرف النوم*</label>
+                                                        <label className="form_label">
+                                                            عدد غرف النوم*
+                                                        </label>
                                                         <select
                                                             name="bedrooms"
                                                             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-5 focus:ring-blue-500"
@@ -264,23 +274,19 @@ export default function Contact() {
                                                             required
                                                         >
                                                             <option value="">اختر عدد الغرف</option>
-                                                            <option value="Studio">استوديو</option>
-                                                            <option value="1 Bedroom">غرفة نوم واحدة</option>
-                                                            <option value="2 Bedrooms">غرفتي نوم</option>
+                                                           <option value="1 Bedroom">غرفة نوم واحدة</option>
+                                                            <option value="2 Bedrooms">غرفتان</option>
                                                             <option value="3 Bedrooms">3 غرف نوم</option>
-                                                            <option value="4 Bedrooms">4 غرف نوم</option>
-                                                            <option value="5 Bedrooms">5 غرف نوم</option>
-                                                            <option value="6 Bedrooms">6 غرف نوم</option>
-                                                            <option value="7 Bedrooms">7 غرف نوم</option>
-                                                            <option value="7+ Bedrooms">أكثر من 7 غرف نوم</option>
                                                             <option value="Townhouse">منزل تاون هاوس</option>
-                                                            <option value="Penthouse">بنتهاوس</option>
+                                                            <option value="Villa">فيلا</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12" style={{ marginBottom: 20 }}>
                                                     <div className="contact-page__input-box dropdown_styling">
-                                                        <label className="form_label">متى ترغب في الشراء؟*</label>
+                                                        <label className="form_label">
+                                                            متى تخطط للشراء؟*
+                                                        </label>
                                                         <select
                                                             name="duration"
                                                             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-5 focus:ring-blue-500"
@@ -288,11 +294,11 @@ export default function Contact() {
                                                             onChange={handleChange}
                                                             required
                                                         >
-                                                            <option value="">اختر</option>
-                                                            <option value="Immediately">فوراً</option>
-                                                            <option value="3 Months">3 أشهر</option>
-                                                            <option value="6 Months">6 أشهر</option>
-                                                            <option value="1 Year">سنة واحدة</option>
+                                                            <option value="">اختر المدة</option>
+                                                            <option value="Immediately">فورًا</option>
+                                                            <option value="3 Months">خلال 3 أشهر</option>
+                                                            <option value="6 Months">خلال 6 أشهر</option>
+                                                            <option value="1 Year">خلال سنة</option>
                                                             <option value="More than a Year">أكثر من سنة</option>
                                                         </select>
                                                     </div>
@@ -302,7 +308,9 @@ export default function Contact() {
                                             <div className="row">
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                                     <div className="contact-page__input-box dropdown_styling">
-                                                        <label className="form_label">ما هو الغرض من الشراء؟*</label>
+                                                       <label className="form_label">
+                                                            ما هو الغرض من الشراء؟*
+                                                        </label>
                                                         <select
                                                             name="purpose"
                                                             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-5 focus:ring-blue-500"
@@ -310,8 +318,8 @@ export default function Contact() {
                                                             onChange={handleChange}
                                                             required
                                                         >
-                                                            <option value="">اختر</option>
-                                                            <option value="Self-Use">للاستخدام الشخصي</option>
+                                                            <option value="">اختر الغرض</option>
+                                                            <option value="Self-Use">استخدام شخصي</option>
                                                             <option value="Investment">استثمار</option>
                                                         </select>
                                                     </div>
