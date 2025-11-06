@@ -53,6 +53,12 @@ export default function Banner() {
        <p className="down_styling" style={{lineHeight: "1.5"}}>
 *442,000 دولار أمريكي / 384,000 يورو / <span className="line-break-other">338,000 جنيه إسترليني</span>
 </p>
+<p className="down_styling" style={{lineHeight: "1.5"}}>
+*متاح حسب التوفّر
+</p>
+  <p className="down_styling" style={{lineHeight: "1.5"}}>
+*قد تختلف الأسعار العالمية حسب سعر الصرف
+</p>
 
       </div>
         </div>
