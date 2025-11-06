@@ -44,14 +44,14 @@ export default function Banner() {
          <div>
              <p className='small_heading' style={{lineHeight: "1.2"}}>دبي هيلز استيت</p>
           <h3 style={{lineHeight: "1.2"}} className='main_heading_margin'>
-  امتلك منزلاً فاخراً ابتداءً من<span className="line-break">1.6 مليون درهم إماراتي*</span>
+  امتلك منزلاً فاخراً ابتداءً من<span className="line-break">1.62 مليون درهم إماراتي*</span>
 </h3>
          </div>
 
         <p className="down_styling" style={{lineHeight: "1.5"}}>احصل على عوائد استثنائية على استثمارك العقاري في أكثر مواقع دبي طلبًا.</p>
   <div className='resp_usd'>
        <p className="down_styling" style={{lineHeight: "1.5"}}>
-*379,000 دولار أمريكي / 436,000 يورو / <span className="line-break-other">332,000 جنيه إسترليني</span>
+*442,000 دولار أمريكي / 384,000 يورو / <span className="line-break-other">338,000 جنيه إسترليني</span>
 </p>
 
       </div>
