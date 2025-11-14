@@ -275,6 +275,10 @@ h6 {
     height: 100% !important;
 }
 
+.captcha_container {
+    margin-top: 30px;
+}
+
 .contact-page {
      background-color: #9f8151;
      padding-top: 100px;
